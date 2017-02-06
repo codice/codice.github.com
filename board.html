@@ -1,105 +1,43 @@
+---
+
+---
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Codice Website </title>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<title>Codice: Board</title>
+	{% include head.html %}
 </head>
 
 <body>
 <div class="shadow-wrapper">
 <div class="content-wrap">
 	
-	<div class="container">
-		<div class="header-wrap-pages header-main row">
-			<div class="logo col-md-4">
-				<a href="index.html"><img src="images/codice-logo.png" /></a>
-			</div>
-
-			<div class="col-md-8">
-				<nav>
-					<div class="nav-item"><a href="#">About</a>
-						<ul class="sub-menu">
-							<li><a href="about.html">About Codice</a></li>
-							<li><a href="governance.html">Governance</a></li>
-							<li><a href="board.html">The Board</a></li>
-							<li><a href="roles.html">Roles</a></li>
-							<li><a href="bylaws.html">Bylaws</a></li>
-						</ul>
-					</div>
-					<div class="nav-item"><a href="#">Contributing</a>
-						<ul class="sub-menu">
-							<li><a href="contributing.html">How To Contribute</a></li>
-							<li><a href="agreements.html">Agreements</a></li>
-							<li><a href="proposal.html">Proposal Templates</a></li>
-							<li><a href="incubation.html">Incubation</a></li>
-							<li><a href="graduation.html">Incubation Graduation</a></li>
-						</ul>
-					</div>
-					<div class="nav-item"><a href="tools.html">Tools</a></div>
-				</nav>
-			</div>
-		</div>
-	</div>
+	{% include header.html %}
 
 	<div class="container">
 		<div class="main-content-wrap">
-				<h2>Board of Directors</h2>
-				<p>The Codice Foundation is a non-profit “member run” foundation. This means that operating decisions are based on majority consensus with each board member taking an active role in management of the organization.</p>
+			<h2>Board of Directors</h2>
+			<p>The Codice Foundation is a non-profit “member run” foundation. This means that operating decisions are based on majority consensus with each board member taking an active role in management of the organization.</p>
 
-				<p>The Board of Directors is responsible for ensuring the Codice mission statement objectives are being delivered for its member project committees and external stakeholders. The Board is charged with providing four primary service areas:</p>
+			<p>The Board of Directors is responsible for ensuring the Codice mission statement objectives are being delivered for its member project committees and external stakeholders. The Board is charged with providing four primary service areas:</p>
 
-				<h3>1. IT Infrastructure, related tools and services</h3>
-				<p>Codice projects may choose to use their own tools or take advantage of Codice tools.</p>
+			<h3>1. IT Infrastructure, related tools and services</h3>
+			<p>Codice projects may choose to use their own tools or take advantage of Codice tools.</p>
 
-				<h3>2. Guidance for project teams migrating from the government space</h3>
-				<p>Experiences of individual Codice projects while making the move into the open are provided to new projects in an effort to ease transition.</p>
+			<h3>2. Guidance for project teams migrating from the government space</h3>
+			<p>Experiences of individual Codice projects while making the move into the open are provided to new projects in an effort to ease transition.</p>
 
-				<h3>3. Community promotion</h3>
-				<p>Communicating the value and helping project’s identify application of technology to new potential users helps to grow a project’s base. Guidance to operating in a transparent manner that fosters quality contributions and growth is also provided.</p>
+			<h3>3. Community promotion</h3>
+			<p>Communicating the value and helping project’s identify application of technology to new potential users helps to grow a project’s base. Guidance to operating in a transparent manner that fosters quality contributions and growth is also provided.</p>
 
-				<H3>4. Legal infrastructure protecting contributors and project Intellectual Property (IP).</H3>
-				<p>Codice projects use OSI-approved licenses with Codice maintaining the ability to hold copyright while providing attribution to individual authors.</p>
-		</div>
-
-
-		<div class="contact-wrap row">
-			<div class="col-sm-12 contact-title">
-				Contact
-			</div>
-			<div class="col-sm-12">
-				<div class="contact-intro">
-					Contact us at (703) 594-1770 or email at info@codicefoundation.org.
-				</div>
-			</div>
-		<!-- 	<form class="col-sm-12">
-				<div class="form-wrap">
-					<label for="name">Name:</label>
-					<input type="text" name="name" />
-					<label for="email">Email:</label>
-					<input type="email" name="email">
-					<label for="message">Message:</label>
-					<textarea name="message"></textarea>
-					<input type="submit" value="Send">
-				</div>
-			</form> -->
-		</div>
-
-		<div class="footer-wrap row">
-
-			<img class="sponsored-by-connexta" src="images/sponsored-by-connexta.png" alt="Sponsored by Connexta" title="Sponsored by Connexta">
-			<nav class="footer-nav"> 
-				<div class="footer-nav-item"><a href="#">&copy; Codice Foundation, Inc. All rights reserved. Codice Foundation is a qualified is a 501(c)(3) tax-exempt organization.</a></div>
-				<!-- <div class="footer-nav-item"><a href="#">Item</a></div>
-				<div class="footer-nav-item"><a href="#">Item</a></div>
-				<div class="footer-nav-item"><a href="#">Item</a></div>
-				<div class="footer-nav-item"><a href="#">Item</a></div> -->
-			</nav>
-		</div>
-
+			<H3>4. Legal infrastructure protecting contributors and project Intellectual Property (IP).</H3>
+			<p>Codice projects use OSI-approved licenses with Codice maintaining the ability to hold copyright while providing attribution to individual authors.</p>
+		</div><!-- /main-content-wrap -->
 	</div><!-- /container -->
+
+	{% include footer.html %}
+
 </div>
 </div><!-- /shadow-wrapper -->
 </body>

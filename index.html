@@ -1,56 +1,20 @@
+---
+
+---
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Codice Website </title>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<title>Codice: Home </title>
+	{% include head.html %}
+	
 </head>
 
 <body>
 <div class="shadow-wrapper">
 <div class="content-wrap">
 	
-	<div class="header-wrap container">
-		<div class="header-main row">
-			<div class="logo col-md-4">
-				<a href="index.html"><img src="images/codice-logo.png" /></a>
-			</div>
-
-			<div class="col-md-8">
-				<nav>
-					<div class="nav-item"><a href="#">About</a>
-						<ul class="sub-menu">
-							<li><a href="about.html">About Codice</a></li>
-							<li><a href="governance.html">Governance</a></li>
-							<li><a href="board.html">The Board</a></li>
-							<li><a href="roles.html">Roles</a></li>
-							<li><a href="bylaws.html">Bylaws</a></li>
-						</ul>
-					</div>
-					<div class="nav-item"><a href="#">Contributing</a>
-						<ul class="sub-menu">
-							<li><a href="contributing.html">How To Contribute</a></li>
-							<li><a href="agreements.html">Agreements</a></li>
-							<li><a href="proposal.html">Proposal Templates</a></li>
-							<li><a href="incubation.html">Incubation</a></li>
-							<li><a href="graduation.html">Incubation Graduation</a></li>
-						</ul>
-					</div>
-					<div class="nav-item"><a href="tools.html">Tools</a></div>
-				</nav>
-			</div>
-		</div>
-
-		<div class="proc-flex-wrap">
-			<div class="proc-flex">
-				<h2>A Public Code Conservancy</h2>
-				<p>The Codice Foundation is an industry-driven consortium providing infrastructure, support, education, and export control advice to communities of government-focused engineers and organizations operating open source projects.</p>
-				<!-- <a class="header-cta" href="#" title="Learn More About Codice">Learn more</a> -->
-			</div>
-		</div>
-	</div>
+	{% include header-home.html %}
 
 	<div class="container">
 		<div class="row">
@@ -75,7 +39,7 @@
 				<div class="project-wrap project-3">
 					<div class="project">
 						<img class="project-logo" src="images/logo-alliance.png" title="Alliance" alt="Alliance">
-						<p>An Intelligence, surveillance and reconnaissance (ISR) variant to DDF with geospatial capabilities.</p>
+						<p>An Intelligence, Surveillance and Reconnaissance (ISR) variant to DDF with geospatial capabilities.</p>
 						<a class="btn-secondary" href="https://github.com/codice/alliance" target="_blank">View Project &raquo;</a>
 					</div>
 				</div>
@@ -133,44 +97,11 @@
 				  </div>
 				</div>
 			</div>
-
-		</div>
-
-		<div class="contact-wrap row">
-			<div class="col-sm-12 contact-title">
-				Contact
-			</div>
-			<div class="col-sm-12">
-				<div class="contact-intro">
-					Contact us at (703) 594-1770 or email at info@codicefoundation.org.
-				</div>
-			</div>
-		<!-- 	<form class="col-sm-12">
-				<div class="form-wrap">
-					<label for="name">Name:</label>
-					<input type="text" name="name" />
-					<label for="email">Email:</label>
-					<input type="email" name="email">
-					<label for="message">Message:</label>
-					<textarea name="message"></textarea>
-					<input type="submit" value="Send">
-				</div>
-			</form> -->
-		</div>
-
-		<div class="footer-wrap row">
-
-			<img class="sponsored-by-connexta" src="images/sponsored-by-connexta.png" alt="Sponsored by Connexta" title="Sponsored by Connexta">
-			<nav class="footer-nav"> 
-				<div class="footer-nav-item"><a href="#">&copy; Codice Foundation, Inc. All rights reserved. Codice Foundation is a qualified is a 501(c)(3) tax-exempt organization.</a></div>
-				<!-- <div class="footer-nav-item"><a href="#">Item</a></div>
-				<div class="footer-nav-item"><a href="#">Item</a></div>
-				<div class="footer-nav-item"><a href="#">Item</a></div>
-				<div class="footer-nav-item"><a href="#">Item</a></div> -->
-			</nav>
-		</div>
-
+		</div><!-- /row -->
 	</div><!-- /container -->
+
+	{% include footer.html %}
+
 </div>
 </div><!-- /shadow-wrapper -->
 </body>

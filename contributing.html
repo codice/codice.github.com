@@ -1,109 +1,47 @@
+---
+---
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Codice Website </title>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<title>Codice: Contributing</title>
+	{% include head.html %}
 </head>
 
 <body>
 <div class="shadow-wrapper">
 <div class="content-wrap">
 	
-	<div class="container">
-		<div class="header-wrap-pages header-main row">
-			<div class="logo col-md-4">
-				<a href="index.html"><img src="images/codice-logo.png" /></a>
-			</div>
-
-			<div class="col-md-8">
-				<nav>
-					<div class="nav-item"><a href="#">About</a>
-						<ul class="sub-menu">
-							<li><a href="about.html">About Codice</a></li>
-							<li><a href="governance.html">Governance</a></li>
-							<li><a href="board.html">The Board</a></li>
-							<li><a href="roles.html">Roles</a></li>
-							<li><a href="bylaws.html">Bylaws</a></li>
-						</ul>
-					</div>
-					<div class="nav-item"><a href="#">Contributing</a>
-						<ul class="sub-menu">
-							<li><a href="contributing.html">How To Contribute</a></li>
-							<li><a href="agreements.html">Agreements</a></li>
-							<li><a href="proposal.html">Proposal Templates</a></li>
-							<li><a href="incubation.html">Incubation</a></li>
-							<li><a href="graduation.html">Incubation Graduation</a></li>
-						</ul>
-					</div>
-					<div class="nav-item"><a href="tools.html">Tools</a></div>
-				</nav>
-			</div>
-		</div>
-	</div>
+	{% include header.html %}
 
 	<div class="container">
 		<div class="main-content-wrap">
-				<h2>Contributing to Codice</h2>
-				<p>There are many ways to contribute to Codice, or any of the projects.  In order to formally contribute you'll need to sign, at a minimum, an Individual Contributor License Agreement (ICLA).  If you're contributing as an employee of an organization you'll also need to sign a Corporate Contributor License Agreement (CCLA) which protects all parties given intellectual property constraints.</p>
+			<h2>Contributing to Codice</h2>
+			<p>There are many ways to contribute to Codice, or any of the projects.  In order to formally contribute you'll need to sign, at a minimum, an Individual Contributor License Agreement (ICLA).  If you're contributing as an employee of an organization you'll also need to sign a Corporate Contributor License Agreement (CCLA) which protects all parties given intellectual property constraints.</p>
 
-				<p>But!  You don't need an agreement to communicate.</p>
+			<p>But!  You don't need an agreement to communicate.</p>
 
-				<h3>Communicate!</h3>
-				<p>It all starts with communicating with the projects, or our organization.  The mailing lists, and issue trackers - the communities - are an ocean of knowledge.  It's a two-way street, so let's ensure we're all communicating well.</p>
+			<h3>Communicate!</h3>
+			<p>It all starts with communicating with the projects, or our organization.  The mailing lists, and issue trackers - the communities - are an ocean of knowledge.  It's a two-way street, so let's ensure we're all communicating well.</p>
 
-				<p>Submit issues, which helps us document the process as well.</p>
+			<p>Submit issues, which helps us document the process as well.</p>
 
-				<p>Blog, speak and attend Mil-OSS events!</p>
+			<p>Blog, speak and attend Mil-OSS events!</p>
 
-				<h3>Code!</h3>
-				<p>Fork, fix and submit patches, or pull requests.  Earn yourself a spot as an official contributor by signing the agreement and working with the projects.</p>
+			<h3>Code!</h3>
+			<p>Fork, fix and submit patches, or pull requests.  Earn yourself a spot as an official contributor by signing the agreement and working with the projects.</p>
 
-				<h3>Document!</h3>
-				<p>It's not just about the code.  We're also looking for contributions towards documentation (indirectly in blog posts too) for a project's wiki.  If you're interested, reach out to anyone in the project PMC, the mailing list or the Codice BoD and we'll get you moving in the right direction.</p>
+			<h3>Document!</h3>
+			<p>It's not just about the code.  We're also looking for contributions towards documentation (indirectly in blog posts too) for a project's wiki.  If you're interested, reach out to anyone in the project PMC, the mailing list or the Codice BoD and we'll get you moving in the right direction.</p>
 
-				<h3>Sponsor!</h3>
-				<p>There are also ways to contribute by sponsoring events or donating.  Feel free to contact us at info@codicefoundation.org.</p>
-		</div>
-
-
-		<div class="contact-wrap row">
-			<div class="col-sm-12 contact-title">
-				Contact
-			</div>
-			<div class="col-sm-12">
-				<div class="contact-intro">
-					Contact us at (703) 594-1770 or email at info@codicefoundation.org.
-				</div>
-			</div>
-		<!-- 	<form class="col-sm-12">
-				<div class="form-wrap">
-					<label for="name">Name:</label>
-					<input type="text" name="name" />
-					<label for="email">Email:</label>
-					<input type="email" name="email">
-					<label for="message">Message:</label>
-					<textarea name="message"></textarea>
-					<input type="submit" value="Send">
-				</div>
-			</form> -->
-		</div>
-
-		<div class="footer-wrap row">
-
-			<img class="sponsored-by-connexta" src="images/sponsored-by-connexta.png" alt="Sponsored by Connexta" title="Sponsored by Connexta">
-			<nav class="footer-nav"> 
-				<div class="footer-nav-item"><a href="#">&copy; Codice Foundation, Inc. All rights reserved. Codice Foundation is a qualified is a 501(c)(3) tax-exempt organization.</a></div>
-				<!-- <div class="footer-nav-item"><a href="#">Item</a></div>
-				<div class="footer-nav-item"><a href="#">Item</a></div>
-				<div class="footer-nav-item"><a href="#">Item</a></div>
-				<div class="footer-nav-item"><a href="#">Item</a></div> -->
-			</nav>
-		</div>
-
+			<h3>Sponsor!</h3>
+			<p>There are also ways to contribute by sponsoring events or donating.  Feel free to contact us at info@codicefoundation.org.</p>
+		</div><!-- /main-content-wrap -->
 	</div><!-- /container -->
+
+	{% include footer.html %}
+
 </div>
 </div><!-- /shadow-wrapper -->
 </body>
