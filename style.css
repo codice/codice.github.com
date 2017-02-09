@@ -1,0 +1,532 @@
+/* css */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.main-content-wrap {
+	padding: 50px 10px 100px 10px;
+}
+
+ul {
+	list-style-position: outside;
+	margin-left: 50px;
+}
+
+/*
+=======================================================================================
+	GENERAL TYPOGRAPHY
+=======================================================================================
+*/
+
+html {
+	font-size: 62.5%;
+	font-family: 'Muli', sans-serif;
+	background-color: #d1d5d8;
+	background-image: url('images/background.png');
+}
+
+body {
+	/* TO DO - Figure where scaffolding.less is being called from, and why it's overrideing body font */
+	font-size: 16px;
+	font-size: 1.6rem;
+	color: #3d4249;
+	line-height: 1.5;
+	font-weight: 300;
+}
+
+.shadow-wrapper {
+	box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 5px 0 15px -4px rgba(160,160,160,1), -5px 0 15px -4px rgba(160,160,160,1);
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+p {
+	margin: 0px 0 25px 0;
+	line-height: 1.6;
+}
+
+h2 {
+	color: #2eaaea;
+	font-size: 32px;
+	margin: 50px 0 10px 0;
+	line-height: 1;
+}
+
+h3 {
+	color: #155c7e;
+	font-size: 24px;
+	margin: 50px 0 10px 0;
+	line-height: 1;
+}
+
+h4 { 
+	font-weight: bold;
+	font-size: 16px; 
+	margin: 25px 0 0px 0;
+	line-height: 1.6;
+}
+
+
+/*
+=======================================================================================
+	FORMS
+=======================================================================================
+*/
+
+input[type=text],
+input[type=email],
+textarea {
+	width: 100%; 
+	margin: 15px 0;
+	padding: 7px;
+	border-radius: 3px;
+}
+
+textarea {
+	-webkit-appearance: textfield;
+}
+
+input[type=submit] {
+	display: inline-block;
+	text-decoration: none;
+	margin: 20px auto 0 auto;
+	padding: 10px 30px;
+	background: #b61d1d;
+	color: #FFFFFF;
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(102,102,102,1);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(102,102,102,1);
+    box-shadow: 1px 1px 1px 1px rgba(102,102,102,1);
+    transition: .2s;
+    border: 0px;
+}
+
+input[type=submit]:hover {
+	background: #d81b1b;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+/*
+=======================================================================================
+	HEADER
+=======================================================================================
+*/
+
+.content-wrap {
+	background-color: #d1d5d8;
+}
+
+.container {
+	background: #ffffff;
+}
+
+.header-wrap {
+	width: 100%; 
+	padding: 10 0px;
+	background-color: #FFFFFF;
+	background: url('images/world-map.png');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.header-wrap-pages {
+	border-bottom: solid 1px #e1e1e1;
+}
+
+.header-main { 
+	padding: 0px 0;
+	/*background: #FFFFFF;*/
+}
+
+.header-cta,
+.header-cta:visited,
+.header-cta:link,
+.header-cta:active {
+	display: inline-block;
+	text-decoration: none;
+	margin: 20px auto 0 auto;
+	padding: 10px 30px;
+	background: #b61d1d;
+	color: #FFFFFF;
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(102,102,102,1);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(102,102,102,1);
+    box-shadow: 1px 1px 1px 1px rgba(102,102,102,1);
+    transition: .2s;
+}
+
+.header-cta:hover {
+	background: #d81b1b;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.logo {
+	margin: 10px 0;
+}
+
+/*
+=======================================================================================
+	NAVIGATION
+=======================================================================================
+*/
+
+nav {
+	text-align: center;
+	display: table;
+	float: right;
+/*	margin-top: 12px;*/
+}
+
+.nav-item {
+	display: table-cell;
+	
+	position: relative;
+}
+
+.nav-item > a {
+	/*padding: 10px 20px;*/
+	padding: 35px;
+	color: #666666;
+	text-transform: uppercase;
+	transition: .2s;
+	display: block;
+}
+
+.nav-item > a:hover {
+	color: #333333;
+	opacity: .7;
+	text-decoration: none;
+}
+
+.sub-menu:before {
+	content: '';
+	display: block;
+	width: 28px;
+	height: 18px;
+	background: url('images/nav-arrow.png');
+	margin: 0 auto;
+	opacity: .9;
+}
+
+.sub-menu {
+	position: absolute;
+	top: 60px; 
+	list-style: none;
+	/*border: solid 1px #e1e1e1;*/
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right:0;
+	display: none;
+	border-radius: 4px;
+}
+
+.nav-item:hover .sub-menu {
+	display: block;
+}
+
+.sub-menu > li > a {
+	padding: 12px 10px;
+	border-bottom: solid 1px #5f92aa;
+	display: block;
+	width: 100%;
+	background: #155c7e;
+	text-decoration: none;
+	color: #ffffff;
+	opacity: .9;
+	transition: .2s;
+	line-height: 1.2;
+	/*min-width: 150px;*/
+}
+
+.sub-menu > li > a:hover {
+	opacity: 1;
+}
+
+/*
+=======================================================================================
+	HOMEPAGE PROCLOMATION
+=======================================================================================
+*/
+
+.proc-flex-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding: 80px 0 110px;
+}
+
+.proc-flex {
+	max-width: 900px;
+	text-align: center;
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+.proc-flex h2 {
+	font-size: 48px;
+	font-size: 4.8rem;
+	margin-bottom: 24px;
+	line-height: 1;
+	margin-top: 0px;
+}
+
+/*
+=======================================================================================
+	HOMEPAGE PROJECTS
+=======================================================================================
+*/
+
+.projects-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding:;
+}
+
+.project-title {
+	padding: 70px 0;
+	background: #67747a;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 36px;
+	font-size: 3.6rem;
+	font-weight: light;
+	width: 100%;
+}
+
+.project-wrap {
+	width: 50%;
+	padding: 20px;
+}
+
+@media (max-width: 520px) {
+	.project-wrap {
+		width: 100%;
+	}
+}
+
+.project {
+	/*padding: 45px;*/
+}
+
+.project p {
+	max-width: 340px;
+	margin: 0 auto;
+}
+
+.project-1 {
+	padding: 45px 10px;
+	background: #96b0bd;
+	color: #ffffff;
+	text-align: center;
+}
+
+.project-2 {
+	padding: 45px 10px;
+	background: #919fa7;
+	color: #ffffff;
+	text-align: center;
+}
+
+.project-3 {
+	padding: 45px 10px;
+	background: #82959e;
+	color: #ffffff;
+	text-align: center;
+}
+
+.project-4 {
+	padding: 45px 10px;
+	background: #6d7c83;
+	color: #ffffff;
+	text-align: center;
+}
+
+.project-logo {
+	margin-bottom: 20px;
+}
+
+.btn-secondary,
+.btn-secondary:visited,
+.btn-secondary:active,
+.btn-secondary:link {
+	display: inline-block;
+	background: #d4d6d7;
+	text-decoration: none;
+	margin: 20px auto 0 auto;
+	padding: 5px 25px;
+	color: #363636;
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(102,102,102,1);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(102,102,102,1);
+    box-shadow: 1px 1px 1px 1px rgba(102,102,102,1);
+    transition: .2s;
+}
+
+.btn-secondary:hover {
+	background: #b61d1d;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/*
+=======================================================================================
+	HOMEPAGE GET INVOLVED
+=======================================================================================
+*/
+
+.involved-title {
+	padding: 70px 0 35px 0;
+	text-align: center;
+	font-size: 36px;
+	font-size: 3.6rem;
+	font-weight: light;
+}
+
+.circle {
+  	position: relative;
+  	display: block;
+  	margin: 0 0 70px 0;
+  	background-color: transparent;
+  	color: #222;
+  	text-align: center;
+}
+
+.circle:after {
+  	display: block;
+  	padding-bottom: 100%;
+  	width: 100%;
+  	height: 0;
+  	border-radius: 50%;
+  	background: #02a7cd;
+  	content: "";
+}
+
+.circle-inner {
+  	position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+}
+
+.circle-wrapper {
+  	display: table;
+  	width: 100%;
+  	height: 100%;
+}
+
+.circle-content {
+  	display: table-cell;
+  	padding: 1em;
+  	vertical-align: middle;
+  	color: #FFFFFF;
+	font-size: 24px;
+	font-size: 2.4rem;
+	line-height: 1.15;
+}
+
+/*@media (min-width: 480px) {
+  .circle__content {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .circle__content {
+    font-size: 4em;
+  }
+}*/
+
+
+/*
+=======================================================================================
+	FOOTER CONTACT
+=======================================================================================
+*/
+
+.contact-title {
+	padding: 70px 0 35px 0;
+	text-align: center;
+	font-size: 36px;
+	font-size: 3.6rem;
+	font-weight: light;
+	text-align: center;
+}
+
+.contact-wrap {
+	background: #f0f0f2;
+	padding-bottom: 100px;
+}
+
+.contact-intro {
+	width: 100%; 
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.form-wrap {
+	width: 100%; 
+	max-width: 400px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	margin-top: 35px;
+}
+
+.form-wrap input {
+	display: block;
+	width: 100%;
+}
+
+/*
+=======================================================================================
+	FOOTER
+=======================================================================================
+*/
+
+.footer-wrap {
+	background: #3d4249; 
+	padding: 70px 0; 
+}
+
+.sponsored-by-connexta {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+.footer-nav {
+	text-align: center;
+	float: none;
+	margin: 0 auto;
+}
+
+.footer-nav-item {
+	display: inline-block;
+	text-align: center;
+}
+
+.footer-nav a {
+	padding: 15px 20px;
+	color: #ffffff;
+}
+
+.footer-nav a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}

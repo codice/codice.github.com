@@ -1,131 +1,47 @@
+---
+
+---
+
 <!DOCTYPE html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
-
+<html>
 <head>
-    <meta charset='utf-8' />
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-    <title>Incubation - Graduation - Codice Foundation</title>
-
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link href="assets/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
-
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-35136374-3']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-
-
-    <script src="assets/javascripts/modernizr.js" type="text/javascript"></script>
+	<title>Codice: Graduation</title>
+	{% include head.html %}
 </head>
 
 <body>
-    <div id="page_container">
-        <header id="header">
-            <div class="inner">
-                <a href="index.html" title="Codice Foundation" id="logo">
-                    <img alt="Text_banner" src="assets/images/text_banner.png" />
-                </a>
-                <h2>A Public Code Conservancy</h2>
-                <!-- <a href="https://github.com/codice" class="button"><small>Follow me on</small>GitHub</a> -->
-            </div>
-        </header>
-        <section id="page">
-            <em>
-  <div class="inner clearfix">
-    <section id="main-content">
-      <h1>Incubation Graduation</h1>
-<p>It is the hope that all incubating projects at Codice will achieve "top-level" status, and grow out of incubation. &#160;However, we know that not all good ideas come at the right time. &#160;If incubating projects grow stale, or never achieve the community growth expected of healthy projects, termination may be suggested by the Codice BoD.</p>
-<p>In order for a incubator to graduate there are a few bare minimum requirements.</p>
-<h2>Bare Minimums</h2>
-<div><ul><li>The project is positively healthy and has consumers</li>
-<li>The project has contributors from multiple organizations</li>
-<li>The project is operationally capable of continuously improving</li>
-<li>The project has demonstrated professional use of the Codice tools</li>
-</ul></div>
-<h2>Process</h2>
-<p>When the IPMC feels that it is ready, it should negotiate the potential submission for graduation with the project sponsor, or a Codice BoD member. &#160;If all issues are resolved and the IPMC Chairperson is ready, a simple email with the graduation proposal content shall be sent to <a href="mailto:bod@codice.org">bod@codice.org</a> for a final vote.</p>
-<p>The Apache Foundation provides a great metaphor for the process and even includes a template email - <a href="http://incubator.apache.org/guides/graduation.html#tlp-resolution" title="http://incubator.apache.org/guides/graduation.html#tlp-resolution" target="_blank">check it here</a>.</p>
+<div class="shadow-wrapper">
+<div class="content-wrap">
+	
+	{% include header.html %}
 
-    </section>
-          
-    <aside id="sidebar">
-      <nav id='menu' class='menu'>
-  <ul>
-    <li class='first'>
-<a href="index.html">Home</a>    <ul class='clearfix'>
-      <li class='first last'>
-<a href="about.html">About</a></li>
-    </ul>
-</li>
-<li>
-<a href="governance.html">Governance</a>    <ul class='clearfix'>
-      <li class='first'>
-<a href="board.html">The Board</a></li>
-<li class='last'>
-<a href="roles.html">Roles</a></li>
-    </ul>
-</li>
-<li>
-<a href="contributing.html">Contributing</a>    <ul class='clearfix'>
-      <li class='first'>
-<a href="agreements.html">Agreements</a></li>
-<li class='last'>
-<a href="proposal.html">Proposal Template</a></li>
-    </ul>
-</li>
-<li class='selected'>
-<a href="incubation.html">Incubation</a>    <ul class='clearfix'>
-      <li class='selected first last'>
-<a href="graduation.html">Graduation</a></li>
-    </ul>
-</li>
-<li>
-<a href="tools.html">Tools</a></li>
-<li class='last'>
-<a href="projects.html">Projects</a></li>
-  </ul>
-</nav>
+	<div class="container">
+		<div class="main-content-wrap">
+				<h2>Incubation Graduation</h2>
+				<p>It is the hope that all incubating projects at Codice will achieve "top-level" status, and grow out of incubation. However, we know that not all good ideas come at the right time. If incubating projects grow stale, or never achieve the community growth expected of healthy projects, termination may be suggested by the Codice BoD.</p>
 
-                     
-      
-    </aside>
+				<p>In order for a incubator to graduate there are a few bare minimum requirements.</p>
 
-  </div>
-</em>
-        </section>
-        <footer>
-            <div class="inner">
-                <a href="index.html" title="Codice Foundation">
-          &copy; Codice Foundation
-        </a>
-                <h2>Codice Foundation: A Public Code Conservancy</h2>
-            </div>
-        </footer>
-    </div>
+				<h4>Bare Minimums</h4>
+				<ul>
+					<li>The project is positively healthy and has consumers</li>
+					<li>The project has contributors from multiple organizations</li>
+					<li>The project is operationally capable of continuously improving</li>
+					<li>The project has demonstrated professional use of the Codice tools</li>
+				</ul>
+				
+				<h4>Process</h4>
+				<p>When the IPMC feels that it is ready, it should negotiate the potential submission for graduation with the project sponsor, or a Codice BoD member. If all issues are resolved and the IPMC Chairperson is ready, a simple email with the graduation proposal content shall be sent to bod@codice.org for a final vote.</p>
+
+				<p>The Apache Foundation provides a great metaphor for the process and even includes a template email - <a href="http://incubator.apache.org/guides/graduation.html#tlp-resolution" target="_blank">check it here</a>.</p>
+		</div><!-- /main-content-wrap -->
+	</div><!-- /container -->
+
+	{% include footer.html %}
 
 
-    <script src="assets/javascripts/application.js" type="text/javascript"></script>
-
+</div>
+</div><!-- /shadow-wrapper -->
 </body>
 
 </html>
